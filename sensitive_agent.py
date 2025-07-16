@@ -7,7 +7,7 @@ from unidiff import PatchSet
 from io import StringIO
 
 # Initialize Flask app and Ollama model
-GITHUB_TOKEN = "ghp"  # Replace with env var in production
+GITHUB_TOKEN = ""  # Replace with env var in production
 app = Flask(__name__)
 llm = Ollama(model="tinyllama")  # Use "llama3" or "mistral" if available for better accuracy
 
